@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            border: 1px solid;
+        }
+
+        div {
+            float: left;
+            border: 1px solid;
+            height: 100px;
+            width: 100px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div class="div1">
+        <div class="div2">
+            <div class="div3"></div>
+        </div>
+    </div>
+
+    <script>
+        function addItem(event) {
+            alert("div");
+        }
+
+        var newDiv = document.createElement("div");
+        newDiv.setAttribute("class", "div4");
+
+        // var divs = document.querySelectorAll("div");
+        // divs.forEach(function(div) {
+        //     div.addEventListener("click", addItem);
+        // });
+
+        document.getElementsByClassName("div1")[0].addEventListener("click", addItem, {caption: true});
+
+        document.getElementsByClassName("div3")[0].appendChild(newDiv);
+        document.getElementsByClassName("div4")[0].appendChild(newDiv);
+    </script>
+</body>
+
+</html>

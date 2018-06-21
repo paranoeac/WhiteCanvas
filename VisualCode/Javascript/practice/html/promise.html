@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        console.log("1");
+        setTimeout(function() {
+            console.log("2");
+        }, 3000)
+        console.log("3");
+    </script> -->
+    <script>
+        var callback = function(a) {
+            console.log(a);
+        }
+
+        function test(callback) {
+            var num = 2;
+            console.log(1);
+            setTimeout(function(num) {
+                callback(num);
+            }, 3000);
+            console.log(3);
+        }
+
+        test();
+    </script>
+</body>
+
+</html>

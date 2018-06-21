@@ -1,0 +1,28 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "hackerlank",
+                "projectName": "hackerlank",
+                "workingDirectory": "c:\\Users\\Ryan\\OneDrive\\문서\\VS Code",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "hackerlank",
+                "projectName": "hackerlank",
+                "workingDirectory": "c:\\Users\\Ryan\\OneDrive\\문서\\VS Code",
+                "args": [],
+                "vmargs": [],
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
